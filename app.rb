@@ -1,5 +1,10 @@
 def stock_picker(prices)
+
     puts "Welcome to the Stock Picker!"
+
+    puts "How much money do you want to spend?"
+    money = gets.chomp.to_i
+    "You can spend $#{money}"
 
     prices.each { |price| puts price }
 
@@ -9,7 +14,6 @@ def stock_picker(prices)
     #Store lowest and highest prices
     lowest_highest = prices.minmax
     puts "The lowest and highest stock prices are: #{lowest_highest}"
-
 
 
 end
