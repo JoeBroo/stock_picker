@@ -24,10 +24,10 @@ def stock_picker(prices)
     days.each_with_index {|day, idx| puts "#{day} is day #{idx + 1} of the week"}
 
 
-    #Find cheapest price
+    #Find cheapest stock price
     cheap = prices.min
 
-    #Find most expensive price
+    #Find most expensive stock price
     expensive = prices.max
 
     #Find their locations
